@@ -1,7 +1,11 @@
 ﻿@page "/"
 @using FriendlyCarnival.Client.Components
 
-<Home Title="Welcome to the Friendly Carnival" @attributes="AdditionalAttributes"></Home>
+<Home Title="Welcome to the Friendly Carnival" @attributes="AdditionalAttributes">
+    <VisitShopContent>
+        Ops, this a content.
+    </VisitShopContent>
+</Home>
 
 @code {
     public Dictionary<string, object> AdditionalAttributes { get; set; } = new Dictionary<string, object>
